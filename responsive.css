@@ -1,0 +1,65 @@
+@media screen and (max-width: 640px) {
+    /* body {
+        width: 150px;
+    } */
+    
+    .container {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        padding: 20px 50px;
+        /* For halfhalf (section & image) */
+        /* height: 50%; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .section .heading h1 {
+        font-size: 18px;
+    }
+
+    .section .heading p {
+        padding-top: 10px;
+        font-size: 12px;
+    }   
+
+    .container .section .statistics {
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .container .section .statistics .stats .headingstats {
+        font-size: 20px;
+    }
+
+    .container .section .statistics .stats .textstats {
+        font-size: 9px;
+        padding-top: 4px;
+    }
+
+    .container .image-container {
+        height: 100%;
+    }
+
+    .container .image-container .image-mobile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.6;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    .container .image-container .image-desktop {
+        display: none;
+    }
+
+    
+
+}

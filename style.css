@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --VeryDarkBlue: hsl(233, 47%, 7%);
+    --DarkDesBlue: hsl(244, 38%, 16%);
+    --SoftViolet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --WhiteP: hsla(0, 0%, 100%, 0.75);
+    --WhiteH: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin: 400px 100px; 
+    background-color: var(--DarkDesBlue);
+    border-radius: 10px;
+}
+
+.section {
+    width: 50%;
+    padding: 80px 50px 20px 50px;
+}
+
+.section .heading h1 {
+    font-family: 'Inter', 'sans-serif';
+    font-size: 28px;
+    font-weight: 700;
+    word-spacing: 2px;
+    letter-spacing: 0.75px;
+    color: var(--White);
+}
+
+.section .heading h1 .insights {
+    color: var(--SoftViolet);
+}
+
+.section .heading p {
+    color: var(--WhiteP);
+    padding-top: 25px;
+    line-height: 23px;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container .section .statistics {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center*/
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Lexend Deca', 'sans-serif';
+    gap: 90px;
+}
+.container .section .statistics .stats .headingstats {
+    color: var(--White);
+    font-weight: 400;
+    font-size: 22px;
+    /* padding-right: 75px; */
+}
+
+.container .section .statistics .stats .textstats {
+    color: var(--WhiteP);
+    font-weight: 100;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container .image-container {
+   width: 50%; 
+   /* height: 100%; */
+   height: auto;
+   width: 100%;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   background-color: var(--SoftViolet);
+   opacity: 1.9;
+}
+
+.container .image-container .image-desktop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container .image-container .image-mobile {
+    display: none;
+}
+
